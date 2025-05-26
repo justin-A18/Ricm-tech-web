@@ -2,41 +2,13 @@
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
 import SectionPresentation from '../components/organisms/SectionPresentation.astro';
-import Card from '../components/molecules/Card.astro';
-import { SERVICES } from '../constants/icons-services';
+import SectionServices from '../components/organisms/SectionServices.astro';
 ---
 
 <Layout>
-	<main class='w-full min-h-dvh max-w-6xl mx-auto px-4'>
+	<main class='w-full min-h-dvh max-w-6xl mx-auto'>
 		<SectionPresentation />
-
-		<section class='flex flex-col items-center justify-center mt-10 gap-8'>
-			<div class='max-w-xl w-full mx-auto space-y-6 text-center'>
-				<h2 class='text-3xl sm:text-5xl font-bold'>Nuestros Servicios</h2>
-				<p class='font-semibold text-neutral-500'>
-					Ofrecemos soluciones tecnológicas diseñadas para resolver problemas
-					reales, optimizar procesos y acelerar el crecimiento de tu negocio.
-					Nuestro enfoque es integral, escalable y siempre orientado a
-					resultados.
-				</p>
-			</div>
-
-			<div
-				class='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-6xl'>
-				{
-					SERVICES.map(({ color, description, icon, title }) => (
-						<Card
-							className={color}
-							title={title}
-							description={description}
-							logo={icon}
-						/>
-					))
-				}
-			</div>
-		</section>
-
-		<br /><br /><br /><br /><br /><br /><br />
+		<SectionServices />
 	</main>
 
 	<footer></footer>
