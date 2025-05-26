@@ -1,0 +1,32 @@
+---
+import Menu from '../../assets/hamburger.svg';
+---
+
+<header class='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4'>
+	<nav
+		class='w-full flex justify-between items-center text-custom-blue-draker h-12 font-semibold'>
+		<span class='font-bold text-3xl'>RICM</span>
+
+		<ul class='items-center hidden md:flex'>
+			<li class='px-4 py-1 border rounded-full border-custom-blue-draker'>
+				<a href='#'>Inicio</a>
+			</li>
+			<li class='px-4 py-1'>
+				<a href='#'>Servicios</a>
+			</li>
+			<li class='px-4 py-1'>
+				<a href='#'>Proyectos</a>
+			</li>
+		</ul>
+
+		<a
+			href='#contact'
+			class='px-4 py-3 bg-custom-black text-white rounded-xl hidden md:block'
+			>Contactanos</a
+		>
+
+		<button class='md:hidden'>
+			<Menu />
+		</button>
+	</nav>
+</header>

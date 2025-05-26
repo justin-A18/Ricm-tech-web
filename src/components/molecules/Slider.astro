@@ -1,0 +1,18 @@
+---
+import SliderItem from '../atoms/SliderItem.astro';
+import { LOGOS } from '../../constants/logos';
+---
+
+<div class='slider'>
+	<div class='list-slider'>
+		{
+			LOGOS.map(({ logo, name, position }) => (
+				<SliderItem
+					src={logo}
+					label={name}
+					position={position}
+				/>
+			))
+		}
+	</div>
+</div>
