@@ -1,0 +1,53 @@
+---
+import Person from '../../assets/person.svg';
+import { Image } from 'astro:assets';
+---
+
+<section class='bg-custom-yellow-2 flex flex-col lg:flex-row-reverse lg:justify-between lg:gap-[10px] lg:pl-[20px]'>
+    <div class="flex flex-col items-center justify-center gap-[10px] font-bold">
+        <h3 class="text-[32px] text-white text-center pt-[25px] pb-[25px] md:text-[35px] lg:text-[40px] xl:text-start">
+            ¿Porqué  Nosotros?
+        </h3>
+        <div class="flex justify-center gap-[10px] p-[15px] xl:w-[63%]">
+            <span class="text-[48px] text-end">02+</span>
+            <div class="flex flex-col">
+                <p class="text-[20px] md:text-[24px]">
+                    Años de experiencia profesional
+                </p>
+                <p class="text-[14px] font-medium md:text-[16px]">
+                    Sabemos cómo transformar ideas en resultados funcionales y medibles.
+                </p>
+            </div>
+        </div>
+        <div class="flex justify-center gap-[10px] p-[15px] xl:w-[63%]">
+            <span class="text-[48px] text-end">10+</span>
+            <div class="flex flex-col">
+                <p class="text-[20px] md:text-[24px]">
+                    Clientes que confian en nosotros
+                </p>
+                <p class="text-[14px] font-medium md:text-[16px]">
+                    Construimos relacionas basadas en resultados, no en promesas.
+                </p>
+            </div>
+        </div>
+        <div class="flex justify-center gap-[10px] p-[15px] xl:w-[63%]">
+            <span class="text-[48px] text-end">10+</span>
+            <div class="flex flex-col">
+                <p class="text-[20px] md:text-[24px]">
+                    Proyectos lanzados al mercado
+                </p>
+                <p class="text-[14px] font-medium md:text-[16px]">
+                    Cada entrega ha sido una oportunidad para crecer y mejorar.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="p-[25px] m-auto md:p-0">
+        <Image 
+            src={Person}
+            alt='Person'
+            width={500}
+            height={500}
+        />
+    </div>
+</section>
