@@ -1,0 +1,43 @@
+---
+import { ChevronRight } from '@lucide/astro';
+---
+
+<section
+	class='bg-custom-orange w-full grid sm:grid-cols-2 px-8 py-10 md:rounded-tl-2xl md:rounded-tr-2xl gap-8'>
+	<article class='flex flex-col gap-4'>
+		<h3 class='text-2xl md:text-4xl font-bold text-custom-blue-draker'>
+			¿Listo para empezar su proyecto? Contactanos.
+		</h3>
+
+		<form class='flex flex-col gap-4'>
+			<input
+				type='text'
+				placeholder='Nombre'
+				class='p-2 border-b-2 outline-0 sm:max-w-sm w-full border-custom-blue-draker text-sm xs:text-base font-semibold'
+			/>
+			<input
+				type='email'
+				placeholder='Correo'
+				class='p-2 border-b-2 outline-0 sm:max-w-sm w-full border-custom-blue-draker text-sm xs:text-base font-semibold'
+			/>
+
+			<button
+				class='p-2 sm:max-w-sm w-full font-semibold border-custom-blue-draker border-b-3 mt-4 cursor-pointer flex justify-between items-center text-lg'
+				type='button'>
+				Contactanos <ChevronRight />
+			</button>
+		</form>
+	</article>
+
+	<article class='flex flex-col gap-4'>
+		<p class='text-custom-blue-draker font-semibold text-lg'>
+			Llevamos a cabo el proceso para lograr el máximo impacto en tu negocio.
+		</p>
+
+		<a
+			href='#'
+			class='px-4 py-3 font-semibold bg-custom-blue rounded-lg text-custom-blue-draker border-2 border-custom-blue-draker w-fit flex items-center gap-2'
+			>Reserva una llamada <ChevronRight class='size-4' />
+		</a>
+	</article>
+</section>
