@@ -23,7 +23,7 @@ export const SERVICES = [
 		title: 'Presencia Online',
 		description: 'Estrategia y asesoría para destacar en internet y redes sociales.',
 		icon: Globe,
-		color: 'bg-custom-yellow'
+		color: 'bg-amber-200'
 	},
 	{
 		title: 'Soluciones Digitales',
