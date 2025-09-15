@@ -4,9 +4,10 @@ import { SERVICES } from '../../constants/icons-services';
 ---
 
 <section
-	class='flex flex-col items-center justify-center mt-10 gap-8 md:py-10 px-4 mb-10'>
+	class='flex flex-col items-center justify-center mt-10 gap-8 md:py-10 px-4 mb-10'
+	id='servicios'>
 	<div class='max-w-3xl w-full mx-auto space-y-4 text-center'>
-		<h2 class='text-2xl min-[600px]:text-4xl md:text-5xl font-bold'>
+		<h2 class='text-3xl min-[600px]:text-4xl md:text-5xl font-bold'>
 			Soluciones diseñadas para que tu negocio funcione mejor
 		</h2>
 		<p class='font-semibold text-neutral-500 max-w-xl mx-auto'>
@@ -16,7 +17,7 @@ import { SERVICES } from '../../constants/icons-services';
 	</div>
 
 	<div
-		class='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-6xl'>
+		class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl'>
 		{
 			SERVICES.map(({ color, description, icon, title }) => (
 				<Card

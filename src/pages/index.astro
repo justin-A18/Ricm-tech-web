@@ -1,9 +1,10 @@
 ---
-import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import Layout from '../layouts/Layout.astro';
 import SectionPresentation from '../components/organisms/SectionPresentation.astro';
 import SectionServices from '../components/organisms/SectionServices.astro';
 import SectionContact from '../components/organisms/SectionContact.astro';
+import Footer from '../components/molecules/Footer.astro';
 ---
 
 <Layout>
@@ -13,46 +14,5 @@ import SectionContact from '../components/organisms/SectionContact.astro';
 		<SectionContact />
 	</main>
 
-	<footer class='bg-[#373737] text-white p-4'>
-		<div class='max-w-6xl mx-auto w-full'>
-			<div class='grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-4 py-8'>
-				<div class='flex flex-col gap-2'>
-					<span class='font-bold text-3xl'>RICM</span>
-					<p class='text-sm'>
-						Creamos software a medida que impulsa negocios. Combinamos
-						tecnología, estrategia y diseño para transformar ideas en soluciones
-						digitales efectivas.
-					</p>
-				</div>
-
-				<ul class='sm:text-right flex flex-col gap-3 font-semibold'>
-					<li>
-						<a href='#'>Inicio</a>
-					</li>
-					<li>
-						<a href='#'>Servicios</a>
-					</li>
-					<li>
-						<a href='#'>Proyectos</a>
-					</li>
-				</ul>
-
-				<ul class='sm:text-right flex flex-col gap-3 font-semibold'>
-					<li>
-						<a href='#'>Facebook</a>
-					</li>
-					<li>
-						<a href='#'>Instagram</a>
-					</li>
-					<li>
-						<a href='#'>Linkedin</a>
-					</li>
-				</ul>
-			</div>
-
-			<div class='w-full text-center font-semibold'>
-				<span> Todos los derechos reservados © 2025 RICM </span>
-			</div>
-		</div>
-	</footer>
+	<Footer />
 </Layout>

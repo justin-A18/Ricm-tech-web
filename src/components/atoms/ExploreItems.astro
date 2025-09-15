@@ -1,0 +1,16 @@
+---
+import { NAV_LINKS } from "../../constants/navigation";
+---
+
+<div class='space-y-4'>
+	<h3 class='text-2xl font-semibold'>Explora</h3>
+	<ul class='flex flex-col gap-3 font-medium'>
+		{
+			NAV_LINKS.map((link) => (
+				<li class='text-neutral-300 w-fit relative before:content-[""] before:absolute before:w-full before:h-0.5 before:bg-neutral-300 before:-bottom-1 before:scale-0 hover:before:scale-100 before:origin-left before:transition-all before:duration-300'>
+					<a href={link.href}>{link.name}</a>
+				</li>
+			))
+		}
+	</ul>
+</div>

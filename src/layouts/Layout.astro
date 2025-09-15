@@ -1,5 +1,5 @@
 ---
-import Navbar from '../components/molecules/Navbar.astro';
+import { Navbar } from '../components/molecules/Navbar.tsx';
 ---
 
 <!doctype html>
@@ -13,16 +13,16 @@ import Navbar from '../components/molecules/Navbar.astro';
 		<link
 			rel='icon'
 			type='image/svg+xml'
-			href='/favicon.svg'
+			href='/logo.svg'
 		/>
 		<meta
 			name='generator'
 			content={Astro.generator}
 		/>
-		<title>RICM Tech</title>
+		<title>Ricm Tech</title>
 	</head>
 	<body>
-		<Navbar />
+		<Navbar client:load />
 		<slot />
 	</body>
 </html>

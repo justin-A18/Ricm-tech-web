@@ -1,0 +1,40 @@
+---
+import Logo from '../../assets/logo-2.svg';
+import ExploreItems from '../atoms/ExploreItems.astro';
+import SocialItems from '../atoms/SocialItems.astro';
+---
+
+<footer class='bg-[#373737] text-white p-4' id="contacto">
+	<div class='max-w-6xl mx-auto w-full'>
+		<div class='grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-4 py-8'>
+			<div class='flex flex-col gap-4 sm:col-span-2'>
+				<div class='flex items-center gap-3'>
+					<Logo class='size-10 rounded-lg fill-white' />
+					<span class='font-bold text-xl'>RICM TECH</span>
+				</div>
+				<p class='text-sm text-neutral-300 font-medium'>
+					Creamos software a medida que impulsa negocios. Combinamos tecnología,
+					estrategia y diseño para transformar ideas en soluciones digitales
+					efectivas.
+				</p>
+
+				<SocialItems />
+			</div>
+
+			<ExploreItems />
+
+			<div class='space-y-4'>
+				<h3 class='text-2xl font-semibold'>Contactanos</h3>
+				<ul class='flex flex-col gap-3 font-medium'>
+					<li class='text-neutral-300'>
+						<p>gestionclientes@ricmtech.dev</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class='w-full text-center font-semibold'>
+			<span> Todos los derechos reservados © 2025 RICM </span>
+		</div>
+	</div>
+</footer>
