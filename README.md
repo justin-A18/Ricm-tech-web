@@ -1,48 +1,56 @@
-# Astro Starter Kit: Basics
+# ⚡ Ricm Tech Landing Page
 
-```sh
-pnpm create astro@latest -- --template basics
+Landing page moderna desarrollada con **Astro**, **React**, **Tailwind CSS** y **TypeScript** para **Ricm Tech**, una empresa enfocada en ofrecer soluciones tecnológicas innovadoras y servicios digitales de alta calidad.
+
+## 🚀 Tecnologías
+
+* 🧑‍🚀 **Astro** – Framework rápido orientado a contenido estático
+* ⚛️ **React** – Componentes interactivos y reutilizables
+* 🎨 **Tailwind CSS** – Diseño moderno y responsive
+* 🧠 **TypeScript** – Tipado seguro y mantenimiento escalable
+
+## 🧩 Estructura del proyecto
+
+```
+src/
+ ├─ assets/       # Imágenes, íconos y recursos estáticos
+ ├─ components/   # Componentes reutilizables (Navbar, Footer, etc.)
+ ├─ constants/    # Datos estáticos y configuraciones
+ ├─ layouts/      # Plantillas base y estructura de página
+ ├─ pages/        # Rutas principales del sitio
+ ├─ styles/       # Estilos globales y configuraciones de Tailwind
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## ✨ Características
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+* Diseño **responsivo y optimizado**
+* Menú desplegable para móviles
+* SEO básico (meta tags, descripción, palabras clave)
+* Footer reorganizado con nuevas secciones de contacto
+* Carga rápida y arquitectura modular
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## ⚙️ Instalación y uso
 
-## 🚀 Project Structure
+```bash
+# Clonar el repositorio
+git clone https://github.com/tuusuario/ricm-tech-landing.git
 
-Inside of your Astro project, you'll see the following folders and files:
+# Entrar al proyecto
+cd ricm-tech-landing
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+# Instalar dependencias
+pnpm install
+
+# Ejecutar en desarrollo
+pnpm dev
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 📦 Despliegue
 
-## 🧞 Commands
+Compatible con plataformas como **Vercel**, **Netlify** o **Cloudflare Pages**.
+Solo conecta tu repositorio y despliega.
 
-All commands are run from the root of the project, from a terminal:
+## 👨‍💻 Autor
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Desarrollado por **Justin Huertas Vargas**
+Frontend Developer | Apasionado por el diseño, la velocidad y las experiencias digitales.
