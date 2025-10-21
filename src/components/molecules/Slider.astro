@@ -6,9 +6,9 @@ import { LOGOS } from '../../constants/logos';
 <div class='slider'>
 	<div class='list-slider'>
 		{
-			LOGOS.map(({ logo, name, position }) => (
+			LOGOS.map(({ name, position, icon }) => (
 				<SliderItem
-					src={logo}
+					src={icon}
 					label={name}
 					position={position}
 				/>

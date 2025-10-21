@@ -1,32 +1,42 @@
 ---
-import Card from '../../components/molecules/Card.astro';
-import { SERVICES } from '../../constants/icons-services';
+import Image from 'astro/components/Image.astro';
+import FRAME1 from '../../assets/Frame-1.svg';
+import Card from '../molecules/Card.astro';
+import Slider from '../molecules/Slider.astro';
+import { SERVICES } from '../../constants/icons-services.astro';
 ---
 
 <section
-	class='flex flex-col items-center justify-center mt-10 gap-8 md:py-10 px-4 mb-10'
+	class='mt-10 flex flex-col gap-10 md:py-10 px-4 mb-10 w-full'
 	id='servicios'>
-	<div class='max-w-3xl w-full mx-auto space-y-4 text-center'>
-		<h2 class='text-3xl min-[600px]:text-4xl md:text-5xl font-bold'>
-			Soluciones diseñadas para que tu negocio funcione mejor
-		</h2>
-		<p class='font-semibold text-neutral-500 max-w-xl mx-auto'>
-			Desarrollamos soluciones alineadas con tus objetivos, enfocadas en
-			resolver problemas reales y generar impacto desde el primer día.
-		</p>
+	<div class='flex flex-col items-center justify-center gap-10'>
+		<div
+			class='max-w-3xl w-full mx-auto space-y-4 text-center flex flex-col items-center justify-center'>
+			<h2 class='text-3xl md:text-4xl font-medium max-w-lg w-full mx-auto'>
+				Impulsa tu negocio online con tecnología
+			</h2>
+
+			<Image
+				src={FRAME1}
+				alt='Frame 1'
+				width={300}
+				height={300}
+				class="h-auto'"
+			/>
+		</div>
+
+		<div
+			class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl'>
+			{SERVICES.map((props) => <Card {...props} />)}
+		</div>
 	</div>
 
-	<div
-		class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl'>
-		{
-			SERVICES.map(({ color, description, icon, title }) => (
-				<Card
-					className={color}
-					title={title}
-					description={description}
-					logo={icon}
-				/>
-			))
-		}
+	<div class='flex flex-col items-center justify-center gap-8 w-full'>
+		<h3
+			class='text-primary tracking-[0.4em] font-medium sm:text-lg text-center max-w-xl'>
+			Tecnologías que impulsan nuestras soluciones
+		</h3>
+
+		<Slider />
 	</div>
 </section>

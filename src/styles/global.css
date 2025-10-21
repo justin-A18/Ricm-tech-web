@@ -1,59 +1,66 @@
-@import "tailwindcss";
-@import "@fontsource/nunito-sans";
+@import 'tailwindcss';
+@import '@fontsource/nunito-sans';
 
 :root {
-  --first-font: "Nunito Sans", sans-serif;
-  --width-item-slider: 200px;
-  --height-item-slider: 50px;
-  --quantity-items-slider: 6;
+	--first-font: 'Nunito Sans', sans-serif;
+	--width-item-slider: 200px;
+	--height-item-slider: 80px;
+	--quantity-items-slider: 8;
 }
 
 @theme {
-  --color-primary: #faf3e1;
-  --color-custom-yellow: #ffc309;
-  --color-custom-black: #373737;
-  --color-custom-blue: #9bd3d0;
-  --color-custom-orange: #feccb5;
-  --color-custom-blue-draker: #171133;
-  --color-custom-blue-darker-2: #4c4a66;
-  --font-nunito-sans: var(--first-font);
+	--color-primary: #d69fef;
+	--color-secondary: #3b2e41;
+	--color-custom-black: #18131a;
+	--color-gray-light: #e0e0e0;
 }
 
 body {
-  @apply bg-primary text-custom-black;
+	background-color: var(--color-custom-black);
+	color: white;
 }
 
 .slider {
-  width: 100%;
-  height: var(--height-item-slider);
-  background-color: var(--color-custom-black);
-  overflow: hidden;
+	width: 100%;
+	height: var(--height-item-slider);
+	background-color: var(--color-custom-black);
+	overflow: hidden;
+	mask-image: linear-gradient(
+		to right,
+		transparent,
+		black 10%,
+		black 90%,
+		transparent
+	);
 }
 
 .slider .list-slider {
-  display: flex;
-  width: 100%;
-  margin-top: .5rem;
-  min-width: calc(var(--width-item-slider) * var(--quantity-items-slider));
-  position: relative;
+	display: flex;
+	width: 100%;
+	margin-top: 0.5rem;
+	min-width: calc(var(--width-item-slider) * var(--quantity-items-slider));
+	position: relative;
 }
 
 .slider .item-slider {
-  width: var(--width-item-slider);
-  height: var(--height-item-slider);
-  position: absolute;
-  left: 100%;
-  animation: autorun 5s linear infinite;
-  animation-delay: calc(
-    (5s / var(--quantity-items-slider)) * (var(--position) - 1)
-  );
+	width: var(--width-item-slider);
+	height: var(--height-item-slider);
+	position: absolute;
+	left: 100%;
+	animation: autorun 5s linear infinite;
+	animation-delay: calc(
+		(5s / var(--quantity-items-slider)) * (var(--position) - 1)
+	);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 @keyframes autorun {
-  from {
-    left: 100%;
-  }
-  to {
-    left: calc(var(--width-item-slider) * -1);
-  }
+	from {
+		left: 100%;
+	}
+	to {
+		left: calc(var(--width-item-slider) * -1);
+	}
 }
