@@ -13,15 +13,8 @@ const { label, src, position } = Astro.props;
 <div
 	class='item-slider'
 	style={`--position: ${position}`}>
-	<div class='flex items-center gap-2'>
-		<Image
-			src={src}
-			alt={label}
-			width={100}
-			class='size-8'
-			height={100}
-		/>
-
-		<span class='text-2xl text-white block font-bold uppercase'>{label}</span>
-	</div>
+	<Image
+		src={src}
+		alt={label}
+	/>
 </div>

@@ -1,39 +1,52 @@
-import Typescript from '../assets/typescript.svg';
-import Astro from '../assets/astro.svg';
-import Java from '../assets/java.svg';
 import Linux from '../assets/linux.svg';
-import React from '../assets/react.svg';
-import WordPress from '../assets/wordpress.svg';
+import Docker from '../assets/docker.svg';
+import Figma from '../assets/figma.svg';
+import Nest from '../assets/nest.svg';
+import Java from '../assets/java.svg';
+import Next from '../assets/next.svg';
+import Postgres from '../assets/postgres.svg';
+import Aws from '../assets/aws.svg';
+
 
 export const LOGOS = [
 	{
-		position: 1,
-		name: 'TypeScript',
-		logo: Typescript,
-	},
-	{
-		position: 2,
-		name: 'Astro',
-		logo: Astro,
-	},
-	{
-		position: 3,
-		name: 'Java',
-		logo: Java,
-	},
-	{
-		position: 4,
 		name: 'Linux',
-		logo: Linux,
+		icon: Linux,
+		position: 1
 	},
 	{
-		position: 5,
-		name: 'React',
-		logo: React,
+		name: 'Docker',
+		icon: Docker,
+		position: 2
 	},
 	{
-		position: 6,
-		name: 'WordPress',
-		logo: WordPress,
+		name: 'Figma',
+		icon: Figma,
+		position: 3
 	},
+	{
+		name: 'Nest',
+		icon: Nest,
+		position: 4
+	},
+	{
+		name: 'Java',
+		icon: Java,
+		position: 5
+	},
+	{
+		name: 'Next',
+		icon: Next,
+		position: 6
+	},
+	{
+		name: 'Postgres',
+		icon: Postgres,
+		position: 7
+	},
+	{
+		name: 'AWS',
+		icon: Aws,
+		position: 8
+	}
 ];

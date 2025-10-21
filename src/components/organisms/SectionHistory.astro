@@ -1,0 +1,49 @@
+---
+import { Image } from 'astro:assets';
+import FRAME2 from '../../assets/Frame-2.svg';
+import RicmTech from '../../assets/ricm-tech.webp';
+---
+
+<section
+	class='flex flex-col items-center justify-center gap-10 md:py-10 px-4 mb-10 w-full'
+	id='servicios'>
+	<div
+		class='max-w-3xl w-full mx-auto space-y-4 text-center flex flex-col items-center justify-center'>
+		<h2 class='text-3xl md:text-4xl font-medium max-w-lg w-full mx-auto'>
+			Nuestra historia
+		</h2>
+
+		<Image
+			src={FRAME2}
+			alt='Frame 2'
+			width={300}
+			height={300}
+			class='w-64 md:w-72 h-auto'
+		/>
+	</div>
+
+	<div
+		class='relative bg-white/5 backdrop-blur-sm p-6 w-full max-w-4xl border border-zinc-700/60 rounded-2xl flex items-center justify-between gap-8 flex-col md:flex-row group'>
+		<div class='space-y-4 flex-1'>
+			<p class='text-gray-light font-[400] text-lg'>
+				Todo comenzó con una idea entre amigos: crear algo grande. Lo que inició
+				como conversaciones sobre tecnología y emprendimiento se transformó en
+				Ricm Tech, un equipo multidisciplinario que combina talento, visión y
+				pasión por innovar. Hoy desarrollamos soluciones digitales que inspiran
+				confianza y conectan tecnología con propósito.
+			</p>
+
+			<span class='block text-primary tracking-[0.4em] text-sm font-medium'>
+				RICM TECH, 2025
+			</span>
+		</div>
+
+		<Image
+			src={RicmTech}
+			alt='Ricm Tech Mascota'
+			width={300}
+			height={300}
+			class='h-auto rounded-lg transition-transform duration-500 group-hover:scale-105 group-hover:rotate-1'
+		/>
+	</div>
+</section>
