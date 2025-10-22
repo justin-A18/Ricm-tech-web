@@ -1,5 +1,5 @@
 ---
-import { ArrowUpRightIcon, ChevronRightIcon } from '@lucide/astro';
+import { ArrowUpRightIcon, UsersIcon } from '@lucide/astro';
 import HeroImage from '../../assets/main.webp';
 import { Image } from 'astro:assets';
 import SocialItems from '../atoms/SocialItems.astro';
@@ -9,7 +9,7 @@ import SocialItems from '../atoms/SocialItems.astro';
 	<div
 		class='flex flex-col items-center min-[1100px]:items-start min-[1100px]:flex-row gap-8 p-4 min-[1100px]:py-20 text-custom-blue-draker px-4'>
 		<div
-			class='md:mt-10 text-center min-[1100px]:text-left space-y-10 max-w-2xl min-[1100px]:max-w-lg w-full flex-1'>
+			class='md:mt-10 text-center min-[1100px]:text-left space-y-7 sm:space-y-10 max-w-2xl min-[1100px]:max-w-lg w-full flex-1'>
 			<div class='space-y-5'>
 				<span class='text-primary tracking-[0.5em] block font-medium'>
 					RICM TECH
@@ -19,7 +19,7 @@ import SocialItems from '../atoms/SocialItems.astro';
 					Impulsa tu negocio online con tecnología
 				</h1>
 
-				<p class='text-sm md:text-lg font-[400] text-gray-light'>
+				<p class='text-base md:text-lg font-[400] text-gray-light'>
 					Desarrollamos soluciones digitales a medida que optimizan tus
 					procesos, fortalecen tu presencia online y aceleran el crecimiento de
 					tu empresa.
@@ -30,7 +30,7 @@ import SocialItems from '../atoms/SocialItems.astro';
 				class='flex flex-col sm:flex-row items-center w-full justify-center min-[1100px]:justify-start gap-4'>
 				<a
 					href='#'
-					class='px-4 py-3 font-semibold bg-primary text-custom-black rounded-lg inline-flex items-center gap-2 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/40 text-base max-w-[250px] w-full justify-center'>
+					class='px-4 py-3 font-semibold bg-primary text-custom-black rounded-full inline-flex items-center gap-2 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/40 text-base max-w-[200px] w-full justify-center'>
 					¡Conversemos!
 					<ArrowUpRightIcon
 						class='transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-1 size-5 md:size-6'
@@ -39,9 +39,9 @@ import SocialItems from '../atoms/SocialItems.astro';
 
 				<a
 					href='#'
-					class='px-4 py-3 font-semibold bg-secondary text-primary rounded-lg inline-flex items-center gap-2 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-secondary/40 text-base max-w-[250px] w-full justify-center'>
+					class='px-4 py-3 font-semibold bg-secondary text-primary rounded-full inline-flex items-center gap-2 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-secondary/40 text-base max-w-[200px] w-full justify-center'>
 					¡Conócenos!
-					<ArrowUpRightIcon
+					<UsersIcon
 						class='transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-1 size-5 md:size-6'
 					/>
 				</a>

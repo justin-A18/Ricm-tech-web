@@ -5,7 +5,7 @@
 	--first-font: 'Nunito Sans', sans-serif;
 	--width-item-slider: 200px;
 	--height-item-slider: 80px;
-	--quantity-items-slider: 8;
+	--quantity-items-slider: 7;
 }
 
 @theme {
@@ -47,9 +47,9 @@ body {
 	height: var(--height-item-slider);
 	position: absolute;
 	left: 100%;
-	animation: autorun 5s linear infinite;
+	animation: autorun 15s linear infinite;
 	animation-delay: calc(
-		(5s / var(--quantity-items-slider)) * (var(--position) - 1)
+		(15s / var(--quantity-items-slider)) * (var(--position) - 1)
 	);
 	display: flex;
 	align-items: center;
