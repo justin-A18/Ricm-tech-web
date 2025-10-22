@@ -47,10 +47,11 @@ body {
 	height: var(--height-item-slider);
 	position: absolute;
 	left: 100%;
-	animation: autorun 15s linear infinite;
-	animation-delay: calc(
-		(15s / var(--quantity-items-slider)) * (var(--position) - 1)
-	);
+	animation-name: autorun;
+	animation-duration: calc(var(--quantity-items-slider) * 1.5s);
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-delay: calc(1.5s * (var(--position) - 1));
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -58,7 +59,7 @@ body {
 
 @keyframes autorun {
 	from {
-		left: 100%;
+		left: 80%;
 	}
 	to {
 		left: calc(var(--width-item-slider) * -1);
