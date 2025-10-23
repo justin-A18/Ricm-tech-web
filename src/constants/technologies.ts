@@ -6,7 +6,7 @@ import Java from '../assets/java.svg';
 import Next from '../assets/next.svg';
 
 
-export const LOGOS = [
+export const TECHNOLOGIES = [
 	{
 		name: 'Linux',
 		icon: Linux,
