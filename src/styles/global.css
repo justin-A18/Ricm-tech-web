@@ -1,11 +1,10 @@
 @import 'tailwindcss';
-@import '@fontsource/nunito-sans';
 
 :root {
-	--first-font: 'Nunito Sans', sans-serif;
+	--font-sans: 'Rubik Variable', sans-serif;
 	--width-item-slider: 200px;
 	--height-item-slider: 80px;
-	--quantity-items-slider: 7;
+	--quantity-items-slider: 6;
 }
 
 @theme {
@@ -18,6 +17,7 @@
 body {
 	background-color: var(--color-custom-black);
 	color: white;
+	font-family: var(--font-sans);
 }
 
 .slider {
@@ -59,9 +59,25 @@ body {
 
 @keyframes autorun {
 	from {
-		left: 80%;
+		left: 100%;
 	}
 	to {
 		left: calc(var(--width-item-slider) * -1);
+	}
+}
+
+@media (max-width: 768px) {
+	.slider .item-slider {
+		animation-duration: calc(var(--quantity-items-slider) * 0.7s);
+		animation-delay: calc(0.7s * (var(--position) - 1));
+		animation-timing-function: linear;
+	}
+	@keyframes autorun {
+		from {
+			left: 85%;
+		}
+		to {
+			left: calc(var(--width-item-slider) * -0.7);
+		}
 	}
 }

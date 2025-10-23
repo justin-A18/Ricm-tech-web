@@ -1,7 +1,7 @@
 import { NAV_LINKS } from '../../constants/navigation';
 import { MenuIcon } from '../atoms/icons/MenuIcon';
 import { ArrowUpLeftIcon } from '../atoms/icons/ArrowUpLeftIcon';
-import { LogoIcon } from '../atoms/icons/MenuIcon copy';
+import { LogoIcon } from '../atoms/icons/LogoIcon';
 
 export const Navbar = () => {
 	return (

@@ -4,7 +4,6 @@ import Figma from '../assets/figma.svg';
 import Nest from '../assets/nest.svg';
 import Java from '../assets/java.svg';
 import Next from '../assets/next.svg';
-import Aws from '../assets/aws.svg';
 
 
 export const LOGOS = [
@@ -37,10 +36,5 @@ export const LOGOS = [
 		name: 'Next',
 		icon: Next,
 		position: 6
-	},
-	{
-		name: 'AWS',
-		icon: Aws,
-		position: 7
 	}
 ];
