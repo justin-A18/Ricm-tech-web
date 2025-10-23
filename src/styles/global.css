@@ -2,8 +2,8 @@
 
 :root {
 	--font-sans: 'Rubik Variable', sans-serif;
-	--width-item-slider: 200px;
-	--height-item-slider: 80px;
+	--width-item-slider: clamp(90px, 25vw, 200px);
+	--height-item-slider: clamp(80px, 8vw, 100px);
 	--quantity-items-slider: 6;
 }
 
@@ -70,14 +70,21 @@ body {
 	.slider .item-slider {
 		animation-duration: calc(var(--quantity-items-slider) * 0.7s);
 		animation-delay: calc(0.7s * (var(--position) - 1));
-		animation-timing-function: linear;
 	}
-	@keyframes autorun {
-		from {
-			left: 85%;
-		}
-		to {
-			left: calc(var(--width-item-slider) * -0.7);
-		}
-	}
+}
+
+.faq-item {
+	@apply w-full p-6 max-w-4xl rounded-lg gap-8 transition-all duration-300 border border-transparent cursor-pointer;
+}
+
+.faq-content {
+	@apply h-0 opacity-0 invisible overflow-hidden translate-y-4 transition-all duration-300;
+}
+
+.faq-item.is-open {
+	@apply bg-white/5 backdrop-blur-sm border-zinc-700/60 space-y-3 transition-all duration-300;
+}
+
+.faq-item.is-open .faq-content {
+	@apply h-auto opacity-100 visible translate-y-0;
 }

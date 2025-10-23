@@ -1,0 +1,73 @@
+---
+import { Image } from 'astro:assets';
+import FRAME from '../../assets/Frame-3.svg';
+import { PlusIcon, XIcon } from '@lucide/astro';
+
+import { FAQ } from '../../constants/faq';
+---
+
+<section
+	class='mt-10 flex flex-col items-center justify-center gap-10 md:py-10 px-4 mb-10 w-full'
+	id='servicios'>
+	<div
+		class='max-w-3xl w-full mx-auto space-y-4 text-center flex flex-col items-center justify-center'>
+		<h2 class='text-3xl md:text-4xl font-medium max-w-lg w-full mx-auto'>
+			FAQ
+		</h2>
+
+		<Image
+			src={FRAME}
+			alt='Frame 3'
+			width={200}
+			height={200}
+			class="h-auto'"
+		/>
+	</div>
+
+	<div
+		class='w-full max-w-2xl'
+		id='faq-container'>
+		{
+			FAQ.map((faq, index) => (
+				<article
+					class='faq-item group'
+					data-item={index}
+					data-status='closed'>
+					<header class='flex items-center justify-between'>
+						<h3 class='text-base sm:text-lg font-medium pr-4'>{faq.title}</h3>
+						<button class='transition-transform duration-300 group-data-[status=open]:rotate-45'>
+							<PlusIcon class='size-5' />
+						</button>
+					</header>
+					<div class='faq-content'>
+						<p class='text-sm text-gray-light'>{faq.description}</p>
+					</div>
+				</article>
+			))
+		}
+	</div>
+</section>
+
+<script>
+	const $container = document.getElementById('faq-container') as HTMLDivElement;
+	const $items = $container.querySelectorAll<HTMLElement>('[data-item]');
+
+	$container.addEventListener('click', (e) => {
+		if (!(e.target instanceof HTMLElement)) return;
+
+		const $item = e.target.closest('[data-item]') as HTMLElement;
+
+		if (!$item) return;
+
+		$items.forEach((el) => {
+			if (el !== $item) {
+				el.classList.remove('is-open');
+				el.dataset.status = 'closed';
+			}
+		});
+
+		$item.classList.toggle('is-open');
+		$item.dataset.status =
+			$item.dataset.status === 'closed' ? 'open' : 'closed';
+	});
+</script>
