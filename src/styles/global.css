@@ -7,6 +7,10 @@
 	--quantity-items-slider: 6;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 @theme {
 	--color-primary: #d69fef;
 	--color-secondary: #3b2e41;

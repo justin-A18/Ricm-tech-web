@@ -8,7 +8,7 @@ export const Navbar = () => {
 		<header
 			className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4'
 			id='inicio'>
-			<nav className='w-full flex justify-between items-center text-custom-blue-draker h-12 font-semibold'>
+			<nav className='w-full flex justify-between items-center text-custom-blue-draker h-12 font-medium'>
 				<div className='flex items-center gap-3'>
 					<LogoIcon />
 					<span className='font-[600] text-2xl'>RICM</span>
