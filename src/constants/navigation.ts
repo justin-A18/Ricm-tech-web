@@ -16,3 +16,21 @@ export const NAV_LINKS = [
 		href: '#faq'
 	}
 ];
+
+export const NAV_LEGAL_LINKS = [
+	{
+		name: 'Terminos y condiciones',
+		href: '/terminos-y-condiciones'
+	},
+	{
+		name: 'Politica de privacidad',
+		href: '/politica-de-privacidad'
+	}
+];
+
+export const NAV_CONTACT_LINKS = [
+	{
+		name: 'gestionclientes@ricmtech.dev',
+		href: 'mailto:6j0o1@example.com'
+	},
+];

@@ -1,4 +1,5 @@
 ---
+import Footer from '../components/molecules/Footer.astro';
 import { Navbar } from '../components/molecules/Navbar.tsx';
 import '@fontsource-variable/rubik';
 ---
@@ -45,5 +46,6 @@ import '@fontsource-variable/rubik';
 	<body>
 		<Navbar client:load />
 		<slot />
+		<Footer />
 	</body>
 </html>

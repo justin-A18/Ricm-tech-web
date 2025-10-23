@@ -1,9 +1,15 @@
 ---
 import { InstagramIcon, LinkedinIcon, MailIcon } from '@lucide/astro';
+
+interface Props {
+	className?: string;
+}
+
+const { className } = Astro.props;
 ---
 
 <div
-	class='flex items-center gap-4 w-full justify-center min-[1100px]:justify-start'>
+	class={`flex items-center gap-4 w-full justify-center min-[1100px]:justify-start ${className}`}>
 	<a
 		href='#'
 		target='_blank'

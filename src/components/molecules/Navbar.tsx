@@ -29,7 +29,7 @@ export const Navbar = () => {
 
 				<a
 					href='#contacto'
-					className='px-4 py-3 font-semibold bg-primary text-custom-black rounded-lg hidden md:inline-flex items-center gap-2 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/40'>
+					className='px-4 py-3 font-semibold bg-primary text-custom-black rounded-lg hidden md:inline-flex items-center gap-2 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/40 group'>
 					¡Conversemos!
 					<ArrowUpLeftIcon
 						className='size-6 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-1'
