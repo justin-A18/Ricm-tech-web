@@ -1,11 +1,12 @@
 ---
-import { ArrowUpRight } from '@lucide/astro';
 import Logo from '../../assets/logo.svg';
 import {
 	NAV_LINKS,
 	NAV_LEGAL_LINKS,
 	NAV_CONTACT_LINKS,
+	MEMBERS_SOCIAL_LINKS,
 } from '../../constants/navigation';
+import BubblePerson from '../atoms/BubblePerson.astro';
 import FooterColItem from '../atoms/FooterColItem.astro';
 import SocialItems from '../atoms/SocialItems.astro';
 ---
@@ -17,10 +18,12 @@ import SocialItems from '../atoms/SocialItems.astro';
 		<div
 			class='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 py-8'>
 			<div class='flex flex-col gap-4 lg:col-span-2'>
-				<div class='flex items-center gap-3'>
+				<a
+					class='flex items-center gap-3'
+					href='#inicio'>
 					<Logo class='size-10 rounded-lg fill-white' />
 					<span class='font-bold text-xl'>RICM</span>
-				</div>
+				</a>
 				<p class='text-sm text-neutral-300 font-[400]'>
 					Impulsamos tu crecimiento con software a medida, diseño inteligente y
 					soluciones tecnológicas que transforman.
@@ -46,20 +49,23 @@ import SocialItems from '../atoms/SocialItems.astro';
 		</div>
 
 		<div
-			class='w-full font-[400] text-sm text-neutral-300 flex flex-col sm:flex-row items-center justify-between gap-2'>
-			<span class='flex-1'>
+			class='w-full font-[400] text-sm text-neutral-300 flex flex-col md:flex-row items-center justify-between gap-6'>
+			<span class='flex-1 font-medium'>
 				© 2025 Ricm Tech. Impulsando el futuro digital.
 			</span>
 
-			<span>
-				Desarrollado por
-				<a
-					href='https://github.com/justin-A18'
-					target='_blank'
-					class='font-semibold text-primary underline inline-flex items-center gap-1'>
-					@justin-A18 <ArrowUpRight class='size-3' />
-				</a>
-			</span>
+			<div class='flex items-center gap-4'>
+				<span class='font-medium'>Nuestro equipo:</span>
+				{
+					MEMBERS_SOCIAL_LINKS.map((member) => (
+						<BubblePerson
+							avatar={member.avatar}
+							username={member.username}
+							href={member.href}
+						/>
+					))
+				}
+			</div>
 		</div>
 	</div>
 </footer>

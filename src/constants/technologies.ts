@@ -1,9 +1,9 @@
-import Linux from '../assets/linux.svg';
-import Docker from '../assets/docker.svg';
-import Figma from '../assets/figma.svg';
-import Nest from '../assets/nest.svg';
-import Java from '../assets/java.svg';
-import Next from '../assets/next.svg';
+import Linux from '../assets/technologies/linux.svg';
+import Docker from '../assets/technologies/docker.svg';
+import Figma from '../assets/technologies/figma.svg';
+import Nest from '../assets/technologies/nest.svg';
+import Java from '../assets/technologies/java.svg';
+import Next from '../assets/technologies/next.svg';
 
 
 export const TECHNOLOGIES = [
